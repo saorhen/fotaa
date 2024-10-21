@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Saira Stencil One', sans-serif;
+}
+
+body {
+    background: linear-gradient(to top right, rgba(50, 205, 255, 0.5), rgba(239, 156, 218, 1));
+    background-size: cover;
+}
+
+.icon {
+    width: 128px;
+    height: 128px;
+    left: 135px;
+    position: relative;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+  
+h1 {
+    color: #3C5ABC;
+    font-size: 64px;
+    position: absolute;
+    left: 270px;
+}
+
+.logobox{
+    position: absolute;
+    background-color: #b150e975;
+    width: 400px;
+    height: 120px;
+    margin-left: 150px;
+    top: 10px;
+    border-radius: 20px;
+    opacity: 25%;
+}
+
+.box {
+    width: 100%; /* Адаптивная ширина под размер экрана */
+    width: 1300px;
+    height: 600px; /* Переведено из 600px */
+    margin-top: 20px; /* Переведено из 80px */
+    margin-left: 150px; /* Переведено из 80px */
+    margin-right: 485px; /* Переведено из 485px */
+    border-radius: 25px; /* Переведено из 25px */
+    position: absolute;
+    background-color: #D9D9D9;
+    box-shadow: 0 0 50px #ff93db; /* Добавлена прозрачная тень */
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.box img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.box_button {
+    background-color: #89A1EF;
+    margin-left: 1550px;
+    top: 125px;
+    position: absolute;
+    width: 150px;
+    height: 650px;
+    border-radius: 20px;
+    opacity: 36%;
+}
+
+
+.refresh {
+    position: absolute;
+    height: 128px;
+    width: 128px;  
+    top: 580px;
+    margin-left: 1560px;
+}
+
+.button_refresh {
+    width: 128px;
+    height: 128px;
+    border: none;
+    background-image: url('buttons/refresh.png');
+    background-size: cover;
+    background-color: #ffffff00;
+    opacity: 0.8;
+    position: absolute;
+    transform: scale(0.95);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.button_refresh:hover {
+    transform: scale(1.05); 
+    border: 2px solid #f799ff; 
+    border-radius: 15px;
+}
+
+.add {
+    position: absolute;
+    height: 128px;
+    width: 128px;
+    top: 200px; 
+    margin-left: 1560px;
+}
+
+.button_add {
+    width: 128px;
+    height: 128px;
+    border: none;
+    background-image: url('buttons/add.png');
+    background-size: cover;
+    background-color: #ffffff00;
+    opacity: 0.8;
+    transform: scale(0.95);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.button_add:hover {
+    transform: scale(1.05); 
+    border: 2px solid #f799ff; 
+    border-radius: 15px;
+}
+
+.clear {
+    position: absolute;
+    height: 128px;
+    width: 128px;
+    top: 390px;
+    left: 1560px; 
+}
+
+.button_clear {
+    width: 128px;
+    height: 128px;
+    border: none;
+    background-image: url('buttons/clear.png');
+    background-size: cover;
+    background-color: #f799ff00;
+    opacity: 0.8;
+    transform: scale(0.95);
+    transition: transform 0.1s ease, border-color 0.1s ease;
+}
+
+.button_clear:hover {
+    transform: scale(1.05); 
+    border: 2px solid #f799ff; 
+    border-radius: 15px;
+}
+
+.back {
+    position: absolute;
+    height: 128px;
+    width: 128px;
+    top: 390px;
+    margin-left: 150px;
+}
+
+.button_back {
+    width: 128px;
+    height: 128px;
+    border: none;
+    background-image: url('buttons/arrow.png');
+    background-size: cover;
+    background-color: #ffffff00;
+    opacity: 0.8;
+    transform: scale(0.95);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.button_back:hover {
+    transform: scale(1.05); 
+    border: 2px solid #f799ff; 
+    border-radius: 15px;
+}
+
+.next {
+    position: absolute;
+    height: 128px;
+    width: 128px;
+    top: 390px;
+    margin-left: 1320px;
+    transform: rotate(-180deg);
+}
+
+.button_next {
+    width: 128px;
+    height: 128px;
+    border: none;
+    background-image: url('buttons/arrow.png');
+    background-size: cover;
+    background-color: #ffffff00;
+    opacity: 0.8;
+    transform: scale(0.95);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.button_next:hover {
+    transform: scale(1.05); 
+    border: 2px solid #f799ff; 
+    border-radius: 15px;
+}
+
+/* Адаптация для экранов меньше 768px (типично мобильные устройства) */
+@media (max-width: 768px) {
+    body {
+        background: linear-gradient(to top right, rgba(50, 205, 255, 0.7), rgba(239, 156, 218, 1));
+    }
+
+    .icon {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .icon-container {
+        margin-left: 3vw;
+        margin-top: 3vw;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 90%; /* Немного уменьшили ширину на мобильных устройствах */
+        height: 70vw; /* Увеличена высота для лучшего отображения */
+        margin-top: 10vw;
+        margin-left: 5vw; /* Более узкие отступы */
+        margin-right: 5vw;
+        border-radius: 4vw; /* Более большие радиусы на мобильных устройствах */
+    }
+}
